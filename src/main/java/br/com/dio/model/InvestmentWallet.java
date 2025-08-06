@@ -1,11 +1,14 @@
 package br.com.dio.model;
 
+import lombok.Getter;
+
 import java.time.OffsetDateTime;
 import java.util.UUID;
 import java.util.stream.Stream;
 
 import static br.com.dio.model.BankService.INVESTMENT;
 
+@Getter
 public class InvestmentWallet extends Wallet{
 
     private final Investment investment;
